@@ -31,7 +31,7 @@ The app will start running at  [http://localhost:8080](http://localhost:8080/).
 **Running the Tests**
 Type the following command in your terminal to run the tests -
 
-     ./gradlew test
+     mvn test
 
 ---
 
