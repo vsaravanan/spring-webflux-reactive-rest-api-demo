@@ -1,0 +1,83 @@
+spring:
+  profiles:
+    active: test
+  r2dbc:
+    url: r2dbc:pool:postgresql://localhost:5432/jwt_security
+    host: localhost
+    port: 5432
+    database: jwt_security
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+#    sql.init.mode: never
+    #    schema: classpath:init.sql
+    #    initialization-mode: always
+#  jpa:
+#    hibernate:
+#      ddl-auto: validate, update, create, create-drop, none
+    show-sql: true
+    format-sql: true
+    use-sql-comments: true
+    properties:
+      hibernate:
+        format_sql: true
+      lock_timeout: 40000
+      statement_timeout: 40000
+      idle_in_transaction_session_timeout: 40000
+      connectTimeout: PT55S
+#    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
+#application:
+#  security:
+#    jwt:
+#      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+#      expiration: 86400000 # a day
+#      refresh-token:
+#        expiration: 604800000 # 7 days
+
+
+
+
+
+cors:
+  config:
+    enabled: true
+    # Specify allowed headers, like 'x-allowed-header'.
+    allowedHeaders: ['*']
+    # Specify allowed request methods, specify ['*'] to allow all possible ones.
+    allowedMethods: ['*']
+    # Configure requests allowed from specific origins.
+    allowedOrigins: ['*']
+    # Sets the Access-Control-Expose-Headers header.
+    exposedHeaders: true
+    # Sets the Access-Control-Max-Age header.
+    maxAge: 1728000
+    # Sets the Access-Control-Allow-Credentials header.
+    supportsCredentials: true
+
+springdoc.api-docs.path: /api-docs
+dirLog: /data/logs/webflux1
+
+logging:
+  path: ${dirLog}
+  file.name: ${dirLog}/webflux1.log
+  #  file.clean-history-on-start: true
+  pattern.rolling-file-name: ${dirLog}/%d{yyyyMMdd}/govtech.%d{yyyyMMdd}.%i.log.gz
+  pattern.console: "%M - %msg%n"
+  pattern.file: "%msg%n"
+#  pattern.console: "%d{yyyy-MM-dd HH:mm:ss} | [%thread] | %-5level | %logger{36}.%M - %msg%n"
+#  pattern.file: "%d{yyyy-MM-dd HH:mm:ss} | [%thread] | %-5level | %logger{36}.%M - %msg%n"
+  file.max-size: 100MB
+  #  file.total-size-cap: 2MB
+  file.max-history: 15
+  level:
+    #    web: TRACE
+    com.govtech: debug
+    #    org.hibernate.SQL: debug
+    org.springframework.web: debug
+    org.springframework.web.servlet.resource: WARN
+    # org.springframework: trace
+    #org.hibernate.type: trace
+    root: info
