@@ -60,11 +60,11 @@ cors:
     supportsCredentials: true
 
 springdoc.api-docs.path: /api-docs
-dirLog: /data/logs/webflux1
+dirLog: /data/logs/ SpringReactiveMulti
 
 logging:
   path: ${dirLog}
-  file.name: ${dirLog}/webflux1.log
+  file.name: ${dirLog}/ SpringReactiveMulti.log
   #  file.clean-history-on-start: true
   pattern.rolling-file-name: ${dirLog}/%d{yyyyMMdd}/govtech.%d{yyyyMMdd}.%i.log.gz
   pattern.console: "%M - %msg%n"
