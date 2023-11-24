@@ -26,7 +26,7 @@ Type the following command in your terminal to run the app -
 
      mvn clean install
 
-The app will start running at  [http://localhost:8080](http://localhost:8080/).
+The app will start running at  [http://localhost:10200](http://localhost:10200/).
 
 **Running the Tests**
 Type the following command in your terminal to run the tests -
@@ -40,16 +40,16 @@ Type the following command in your terminal to run the tests -
 <code>
  
     ###
-    http://localhost:8080/swagger-ui/index.html
+    http://localhost:10200/swagger-ui/index.html
 
     ###  
-    GET http://localhost:8080/api/v1/users  
+    GET http://localhost:10200/api/v1/users  
 
     ###  
-    GET http://localhost:8080/api/v1/users/init
+    GET http://localhost:10200/api/v1/users/init
       
     ###  
-    POST http://localhost:8080/api/v1/users/webflux
+    POST http://localhost:10200/api/v1/users/webflux
     Content-Type: application/json  
       
     {  
@@ -58,7 +58,7 @@ Type the following command in your terminal to run the tests -
     }  
       
     ###  
-    PUT http://localhost:8080/api/v1/users/24  
+    PUT http://localhost:10200/api/v1/users/24  
     Content-Type: application/json  
       
     {  
@@ -67,14 +67,14 @@ Type the following command in your terminal to run the tests -
     }  
     
     ###  
-    DELETE http://localhost:8080/api/v1/users/24  
+    DELETE http://localhost:10200/api/v1/users/24  
 
     ###  
-    GET http://localhost:8080/api/v1/users/1  
+    GET http://localhost:10200/api/v1/users/1  
       
     ###  
-    GET http://localhost:8080/api/v1/users/flux  
+    GET http://localhost:10200/api/v1/users/flux  
       
     ###  
-    GET http://localhost:8080/api/v1/users/guests/1
+    GET http://localhost:10200/api/v1/users/guests/1
 </code>

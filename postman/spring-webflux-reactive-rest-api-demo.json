@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:8080/api/v1/users/init",
+			"name": "http://localhost:10200/api/v1/users/init",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -24,12 +24,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users/init",
+					"raw": "http://localhost:10200/api/v1/users/init",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -41,7 +41,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/api/v1/users/flux",
+			"name": "http://localhost:10200/api/v1/users/flux",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -58,12 +58,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users/flux",
+					"raw": "http://localhost:10200/api/v1/users/flux",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -74,7 +74,7 @@
 			},
 			"response": [
 				{
-					"name": "http://localhost:8080/api/v1/users/init Copy",
+					"name": "http://localhost:10200/api/v1/users/init Copy",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -88,12 +88,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/users/flux",
+							"raw": "http://localhost:10200/api/v1/users/flux",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "10200",
 							"path": [
 								"api",
 								"v1",
@@ -133,7 +133,7 @@
 			]
 		},
 		{
-			"name": "http://localhost:8080/api/v1/users",
+			"name": "http://localhost:10200/api/v1/users",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -150,12 +150,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users",
+					"raw": "http://localhost:10200/api/v1/users",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -165,7 +165,7 @@
 			},
 			"response": [
 				{
-					"name": "http://localhost:8080/api/v1/users/flux Copy",
+					"name": "http://localhost:10200/api/v1/users/flux Copy",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -179,12 +179,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/users",
+							"raw": "http://localhost:10200/api/v1/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "10200",
 							"path": [
 								"api",
 								"v1",
@@ -223,7 +223,7 @@
 			]
 		},
 		{
-			"name": "http://localhost:8080/api/v1/users/1",
+			"name": "http://localhost:10200/api/v1/users/1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -240,12 +240,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users/1",
+					"raw": "http://localhost:10200/api/v1/users/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -256,7 +256,7 @@
 			},
 			"response": [
 				{
-					"name": "http://localhost:8080/api/v1/users Copy",
+					"name": "http://localhost:10200/api/v1/users Copy",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -270,12 +270,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/users/1",
+							"raw": "http://localhost:10200/api/v1/users/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "10200",
 							"path": [
 								"api",
 								"v1",
@@ -315,7 +315,7 @@
 			]
 		},
 		{
-			"name": "http://localhost:8080/api/v1/users/2",
+			"name": "http://localhost:10200/api/v1/users/2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -332,12 +332,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users/2",
+					"raw": "http://localhost:10200/api/v1/users/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -348,7 +348,7 @@
 			},
 			"response": [
 				{
-					"name": "http://localhost:8080/api/v1/users/1 Copy",
+					"name": "http://localhost:10200/api/v1/users/1 Copy",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -362,12 +362,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/users/2",
+							"raw": "http://localhost:10200/api/v1/users/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "10200",
 							"path": [
 								"api",
 								"v1",
@@ -407,7 +407,7 @@
 			]
 		},
 		{
-			"name": "http://localhost:8080/api/v1/users/guests/1",
+			"name": "http://localhost:10200/api/v1/users/guests/1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -424,12 +424,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users/guests/1",
+					"raw": "http://localhost:10200/api/v1/users/guests/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -441,7 +441,7 @@
 			},
 			"response": [
 				{
-					"name": "http://localhost:8080/api/v1/users/1 Copy",
+					"name": "http://localhost:10200/api/v1/users/1 Copy",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -455,12 +455,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/users/guests/1",
+							"raw": "http://localhost:10200/api/v1/users/guests/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "10200",
 							"path": [
 								"api",
 								"v1",
@@ -501,7 +501,7 @@
 			]
 		},
 		{
-			"name": "http://localhost:8080/api/v1/users/webflux",
+			"name": "http://localhost:10200/api/v1/users/webflux",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -515,12 +515,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users/webflux",
+					"raw": "http://localhost:10200/api/v1/users/webflux",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -531,7 +531,7 @@
 			},
 			"response": [
 				{
-					"name": "http://localhost:8080/api/v1/users/guests/1 Copy",
+					"name": "http://localhost:10200/api/v1/users/guests/1 Copy",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -545,12 +545,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/users/webflux",
+							"raw": "http://localhost:10200/api/v1/users/webflux",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "10200",
 							"path": [
 								"api",
 								"v1",
@@ -590,7 +590,7 @@
 			]
 		},
 		{
-			"name": "http://localhost:8080/api/v1/users",
+			"name": "http://localhost:10200/api/v1/users",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -604,12 +604,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users",
+					"raw": "http://localhost:10200/api/v1/users",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -620,7 +620,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/api/v1/users/4",
+			"name": "http://localhost:10200/api/v1/users/4",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -634,12 +634,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users/4",
+					"raw": "http://localhost:10200/api/v1/users/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -650,7 +650,7 @@
 			},
 			"response": [
 				{
-					"name": "http://localhost:8080/api/v1/users/1 Copy",
+					"name": "http://localhost:10200/api/v1/users/1 Copy",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
@@ -664,12 +664,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/users/4",
+							"raw": "http://localhost:10200/api/v1/users/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "10200",
 							"path": [
 								"api",
 								"v1",
@@ -709,7 +709,7 @@
 			]
 		},
 		{
-			"name": "http://localhost:8080/api/v1/users/2",
+			"name": "http://localhost:10200/api/v1/users/2",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -723,12 +723,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users/2",
+					"raw": "http://localhost:10200/api/v1/users/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -740,7 +740,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/api/v1/users/2 after delete",
+			"name": "http://localhost:10200/api/v1/users/2 after delete",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -757,12 +757,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/users/2",
+					"raw": "http://localhost:10200/api/v1/users/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "10200",
 					"path": [
 						"api",
 						"v1",
@@ -773,7 +773,7 @@
 			},
 			"response": [
 				{
-					"name": "http://localhost:8080/api/v1/users/2 Copy",
+					"name": "http://localhost:10200/api/v1/users/2 Copy",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -787,12 +787,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/users/2",
+							"raw": "http://localhost:10200/api/v1/users/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "10200",
 							"path": [
 								"api",
 								"v1",
