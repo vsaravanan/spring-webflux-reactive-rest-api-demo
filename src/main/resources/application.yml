@@ -4,10 +4,10 @@ spring:
   profiles:
     active: test
   r2dbc:
-    url: r2dbc:pool:postgresql://sjsdb:5432/jwt_security
+    url: r2dbc:pool:postgresql://sjsdb:5432/postgres
     host: sjsdb
     port: 5432
-    database: jwt_security
+    database: postgres
     username: username
     password: password
     driver-class-name: org.postgresql.Driver
