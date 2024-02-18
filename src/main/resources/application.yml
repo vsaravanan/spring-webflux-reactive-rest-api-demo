@@ -4,8 +4,8 @@ spring:
   profiles:
     active: test
   r2dbc:
-    url: r2dbc:pool:postgresql://saravanjs-ins:5432/jwt_security
-    host: localhost
+    url: r2dbc:pool:postgresql://sjsdb:5432/jwt_security
+    host: sjsdb
     port: 5432
     database: jwt_security
     username: username
