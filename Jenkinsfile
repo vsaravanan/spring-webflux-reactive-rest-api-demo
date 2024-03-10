@@ -90,9 +90,9 @@ node {
               to: 'saravanan.resume@gmail.com',
               from: 'jenkins'
   }
-  post {
-    always {
-      junit(testResults: 'target/surefire-reports/*.xml', allowEmptyResults : true)
-    }
-  }
+//  post {
+//    always {
+//      junit(testResults: 'target/surefire-reports/*.xml', allowEmptyResults : true)
+//    }
+//  }
 }
