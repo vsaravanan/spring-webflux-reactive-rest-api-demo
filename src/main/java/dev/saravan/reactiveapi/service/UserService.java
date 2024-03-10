@@ -96,6 +96,23 @@ public class UserService {
         });
     }
 
+    public Mono<Void> deleteAllUsers() {
+        return userRepository.findAll()
+                .flatMap(user -> {
+                    Long addressId = user.getAddressId();
+                    Mono<Void> deleteUserMono = userRepository.deleteById(user.getId());
+
+                    if (addressId != null) {
+                        Mono<Void> deleteAddressMono = addressRepository.deleteById(addressId);
+                        return Mono.when(deleteUserMono, deleteAddressMono);
+                    } else {
+                        return deleteUserMono;
+                    }
+                })
+                .then();
+    }
+
+
 
     
     public Mono<User> getGuestUserById(int id) {

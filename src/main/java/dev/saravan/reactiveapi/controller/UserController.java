@@ -81,8 +81,11 @@ public class UserController {
 
         return userService.deleteUser(id);
 
+    }
 
-
+    @DeleteMapping
+    public Mono<Void> deleteAllUsers() {
+        return userService.deleteAllUsers();
     }
 
 }
