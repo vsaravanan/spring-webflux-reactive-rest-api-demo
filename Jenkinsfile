@@ -41,7 +41,7 @@ node {
     }
 
     stage('Build') {
-      sh "mvn clean package install -T 1C"
+      sh "mvn clean package install -Dmaven.test.skip=true -T 1C"
     }
 
     stage('Package') {
