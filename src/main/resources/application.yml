@@ -12,8 +12,8 @@ spring:
     password: password
     driver-class-name: org.postgresql.Driver
 #    sql.init.mode: never
-    #    schema: classpath:init.sql
-    #    initialization-mode: always
+    schema: classpath:init.sql
+    initialization-mode: always
 #  jpa:
 #    hibernate:
 #      ddl-auto: validate, update, create, create-drop, none
