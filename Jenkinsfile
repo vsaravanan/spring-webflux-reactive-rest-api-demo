@@ -93,6 +93,7 @@ node {
   finally {
     junit(testResults: 'target/surefire-reports/*.xml', allowEmptyResults : true)
     archiveArtifacts 'target/*.jar'
+
   }
 
 }
