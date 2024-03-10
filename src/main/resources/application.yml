@@ -4,12 +4,12 @@ spring:
   profiles:
     active: test
   r2dbc:
-    url: r2dbc:pool:postgresql://sjsdb:5432/postgres
+    url: r2dbc:pool:postgresql://sjsdb:5432/sonar
     host: sjsdb
     port: 5432
-    database: postgres
-    username: username
-    password: password
+    database: sonar
+    username: sonar
+    password: sonar
     driver-class-name: org.postgresql.Driver
 #    sql.init.mode: never
     schema: classpath:init.sql
