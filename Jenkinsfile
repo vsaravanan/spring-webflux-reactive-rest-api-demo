@@ -44,6 +44,10 @@ node {
       sh "mvn clean package install -Dmaven.test.skip=true -T 1C"
     }
 
+    stage('Test') {
+      sh "mvn test -Dmaven.test.failure.ignore=true "
+    }
+
     stage('Package') {
       sh "cd ${jenkinsRoot}; pwd; tar -czf ${WORKSPACE}.tar.gz ${JOB_NAME}"
     }
