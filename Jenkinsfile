@@ -44,11 +44,11 @@ node {
       sh "mvn clean package install -Dmaven.test.skip=true -T 1C"
     }
 
-//    stage('SonarQube') {
-//      withSonarQubeEnv() {
-//        sh "mvn clean verify sonar:sonar -Dsonar.projectKey=saravanjs-project -Dsonar.projectName='saravanjs-project'"
-//      }
-//    }
+    stage('SonarQube') {
+      withSonarQubeEnv() {
+        sh "mvn clean verify sonar:sonar -Dsonar.projectKey=saravanjs-project -Dsonar.projectName='saravanjs-project'"
+      }
+    }
 
     stage('Test') {
       sh "mvn test -Dmaven.test.failure.ignore=true "
