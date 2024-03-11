@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @OpenAPIDefinition(servers = {@Server(url = "https://saravanjs.com:10201/", description = "URL"),
-        @Server(url = "http://localhost:10200/", description = "URL")})
+        @Server(url = "http://saravanjs.com:10200/", description = "URL"),
+        @Server(url = "http://localhost:10200/", description = "URL"),
+        })
 
 public class ReactiveRestApiDemoApplication {
 
