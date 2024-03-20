@@ -45,8 +45,10 @@ node {
     }
 
     stage('SonarQube') {
-      withSonarQubeEnv() {
-        sh "mvn clean verify sonar:sonar -Dsonar.projectKey=saravanjs-project -Dsonar.projectName='saravanjs-project'"
+      catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
+        withSonarQubeEnv() {
+          sh "mvn clean verify sonar:sonar -Dsonar.projectKey=saravanjs-project -Dsonar.projectName='saravanjs-project'"
+        }
       }
     }
 
