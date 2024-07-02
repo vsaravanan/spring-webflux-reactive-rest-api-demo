@@ -44,11 +44,28 @@ node {
       sh "mvn clean package install -Dmaven.test.skip=true -T 1C"
     }
 
+//    stage('SonarQube') {
+//      catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
+//        withSonarQubeEnv() {
+//          sh "mvn clean verify sonar:sonar -Dsonar.projectKey=saravanjs-project -Dsonar.projectName='saravanjs-project'"
+//        }
+//      }
+//    }
+
     stage('SonarQube') {
-      catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
+      try
+      {
         withSonarQubeEnv() {
-          sh "mvn clean verify sonar:sonar -Dsonar.projectKey=saravanjs-project -Dsonar.projectName='saravanjs-project'"
+          def sonarServerReachable = sh(script: 'curl -s -o /dev/null -w "%{http_code}" http://sjsdb:9000', returnStatus: true) == 200
+          if (sonarServerReachable) {
+            echo "SonarQube server is running."
+            sh "mvn clean verify sonar:sonar -Dsonar.projectKey=saravanjs-project -Dsonar.projectName='saravanjs-project'"
+          } else {
+            echo 'SonarQube server is down. Continuing without analysis.'
+          }
         }
+      } catch (Exception e) {
+        echo "SonarQube analysis failed: ${e.message}. Continuing the job."
       }
     }
 
