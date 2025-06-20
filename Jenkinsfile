@@ -1,5 +1,4 @@
 #!/usr/bin/env groovy
-
 node {
   def javaHome = env.JAVA_HOME
   def jenkinsRoot = "${JENKINS_HOME}/workspace"
